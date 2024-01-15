@@ -16,13 +16,6 @@
       <description>说明： 就很奇怪，这才可以使用</description>
     </item>
     <item>
-      <title>Hugo | Hugo-stack-theme主题魔改版</title>
-      <link>https://Rosewwwfr.github.io/2022/stack-theme-mod/</link>
-      <pubDate>Sun, 13 Feb 2022 03:02:52 +0800</pubDate>
-      <guid>https://Rosewwwfr.github.io/2022/stack-theme-mod/</guid>
-      <description>Github仓库地址：Mantyke/stack-theme-mod 本主题由CaiJimmy制作并发布，这个仓库是由Mantyke修改的魔改</description>
-    </item>
-    <item>
       <title>Chinese Test</title>
       <link>https://Rosewwwfr.github.io/2020/test-chinese/</link>
       <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
@@ -42,13 +35,6 @@
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       <guid>https://Rosewwwfr.github.io/2019/placeholder-text/</guid>
       <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Math Typesetting</title>
-      <link>https://Rosewwwfr.github.io/2019/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>https://Rosewwwfr.github.io/2019/math-typesetting/</guid>
-      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Emoji Support</title>
