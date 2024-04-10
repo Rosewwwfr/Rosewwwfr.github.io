@@ -1,35 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on Example Site</title>
+    <title>Pages on rose</title>
     <link>https://Rosewwwfr.github.io/page/</link>
-    <description>Recent content in Pages on Example Site</description>
+    <description>Recent content in Pages on rose</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 09 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://Rosewwwfr.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://Rosewwwfr.github.io/about/</link>
+      <pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://Rosewwwfr.github.io/about/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Archives</title>
       <link>https://Rosewwwfr.github.io/archives/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://Rosewwwfr.github.io/archives/</guid>
       <description></description>
     </item>
     <item>
       <title>Friends</title>
       <link>https://Rosewwwfr.github.io/links/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 09 Apr 2024 00:00:00 +0000</pubDate>
       <guid>https://Rosewwwfr.github.io/links/</guid>
-      <description>这个标题默认隐藏了标题与页尾，推荐用以下格式来交换友情链接。 友链头像放在/assets/link-img，友链数据放在/data/links</description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>https://Rosewwwfr.github.io/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://Rosewwwfr.github.io/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
-https://github.com/yuin/goldmark https://github.</description>
+      <description>推荐用以下格式来交换友情链接。 名称：小球飞鱼 简介：我们会一起遇见鲸鱼吗？ 地址：https://mantyke.icu/ 头像：https://</description>
     </item>
     <item>
       <title>Search</title>

@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on rose</title>
-    <link>https://Rosewwwfr.github.io/post/</link>
-    <description>Recent content in Posts on rose</description>
+    <title>stack on rose</title>
+    <link>https://Rosewwwfr.github.io/tags/stack/</link>
+    <description>Recent content in stack on rose</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 09 Apr 2024 10:17:45 +0800</lastBuildDate>
-    <atom:link href="https://Rosewwwfr.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://Rosewwwfr.github.io/tags/stack/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>【hugo&#43;stack】搭建过程</title>
       <link>https://Rosewwwfr.github.io/2024/hugo-stack%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</link>
       <pubDate>Tue, 09 Apr 2024 10:17:45 +0800</pubDate>
       <guid>https://Rosewwwfr.github.io/2024/hugo-stack%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</guid>
       <description>hugo+stack 本主题由 CaiJimmy 制作并发布，这个仓库是由 Mantyke 修改的魔改版本 Github 仓库地址：Mantyke/stack-theme-mod 参考文章：https://cu</description>
-    </item>
-    <item>
-      <title>Hello World！</title>
-      <link>https://Rosewwwfr.github.io/2024/hello-world/</link>
-      <pubDate>Tue, 09 Apr 2024 09:15:49 +0800</pubDate>
-      <guid>https://Rosewwwfr.github.io/2024/hello-world/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>
