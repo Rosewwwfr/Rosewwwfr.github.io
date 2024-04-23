@@ -6,8 +6,15 @@
     <description>Recent content in Posts on rose</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 09 Apr 2024 10:17:45 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 23 Apr 2024 23:08:18 +0800</lastBuildDate>
     <atom:link href="https://Rosewwwfr.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>网络编程基础入门</title>
+      <link>https://Rosewwwfr.github.io/2024/imgs/</link>
+      <pubDate>Tue, 23 Apr 2024 23:08:18 +0800</pubDate>
+      <guid>https://Rosewwwfr.github.io/2024/imgs/</guid>
+      <description>网络编程 看了狂神说Java的网络编程课程后进行总结。 但是关于 网络编程的知识不止这些，各种I/O的深入了解，不同需要的具体实现等等都需要后续的</description>
+    </item>
     <item>
       <title>【hugo&#43;stack】搭建过程</title>
       <link>https://Rosewwwfr.github.io/2024/hugo-stack%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</link>
