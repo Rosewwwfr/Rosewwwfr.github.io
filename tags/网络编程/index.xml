@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>网络编程 on rose</title>
+    <link>http://localhost:1313/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/</link>
+    <description>Recent content in 网络编程 on rose</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 29 Jul 2024 18:04:15 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>python网络编程入门-1</title>
+      <link>http://localhost:1313/2024/python%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8-1/</link>
+      <pubDate>Mon, 29 Jul 2024 18:04:15 +0800</pubDate>
+      <guid>http://localhost:1313/2024/python%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8-1/</guid>
+      <description>python网络编程 这也仅仅是python网络编程的入门，没有涉及到文件传输，也就是最基础的框架。UCP和TCP传输信息，并使用多线程进行双</description>
+    </item>
+    <item>
+      <title>网络编程基础入门</title>
+      <link>http://localhost:1313/2024/imgs/</link>
+      <pubDate>Tue, 23 Apr 2024 23:08:18 +0800</pubDate>
+      <guid>http://localhost:1313/2024/imgs/</guid>
+      <description>网络编程 看了狂神说Java的网络编程课程后进行总结。 但是关于 网络编程的知识不止这些，各种I/O的深入了解，不同需要的具体实现等等都需要后续的</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Springboot3实战-1 on rose</title>
+    <link>http://localhost:1313/tags/springboot3%E5%AE%9E%E6%88%98-1/</link>
+    <description>Recent content in Springboot3实战-1 on rose</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 20 Nov 2024 21:09:40 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/springboot3%E5%AE%9E%E6%88%98-1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SpringBoot实现注册和登录</title>
+      <link>http://localhost:1313/2024/springboot%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E5%92%8C%E7%99%BB%E5%BD%95/</link>
+      <pubDate>Wed, 20 Nov 2024 21:09:40 +0800</pubDate>
+      <guid>http://localhost:1313/2024/springboot%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E5%92%8C%E7%99%BB%E5%BD%95/</guid>
+      <description>SpringBoot3 实现登录注册功能-1 仅仅是一枚新手实现功能的记录。仅是一个参考，还有很多不足，后续再完善。 该文主要是学习了简单的登录注册功能、邮箱验证、拦</description>
+    </item>
+  </channel>
+</rss>

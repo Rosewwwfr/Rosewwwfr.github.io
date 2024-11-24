@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on rose</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on rose</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 20 Nov 2024 21:09:40 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SpringBoot实现注册和登录</title>
+      <link>http://localhost:1313/2024/springboot%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E5%92%8C%E7%99%BB%E5%BD%95/</link>
+      <pubDate>Wed, 20 Nov 2024 21:09:40 +0800</pubDate>
+      <guid>http://localhost:1313/2024/springboot%E5%AE%9E%E7%8E%B0%E6%B3%A8%E5%86%8C%E5%92%8C%E7%99%BB%E5%BD%95/</guid>
+      <description>SpringBoot3 实现登录注册功能-1 仅仅是一枚新手实现功能的记录。仅是一个参考，还有很多不足，后续再完善。 该文主要是学习了简单的登录注册功能、邮箱验证、拦</description>
+    </item>
+    <item>
+      <title>GUI编程-画画坂</title>
+      <link>http://localhost:1313/2024/imgs/</link>
+      <pubDate>Mon, 02 Sep 2024 08:59:25 +0800</pubDate>
+      <guid>http://localhost:1313/2024/imgs/</guid>
+      <description>这两天学习了GUI编程后，实现的小项目，还有记事本，记事本难点较少，画图板自己解决不了，遂记录一下 画画板项目 要求： 开发一款简单的画图软件, 包</description>
+    </item>
+    <item>
+      <title>python网络编程入门-1</title>
+      <link>http://localhost:1313/2024/python%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8-1/</link>
+      <pubDate>Mon, 29 Jul 2024 18:04:15 +0800</pubDate>
+      <guid>http://localhost:1313/2024/python%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8-1/</guid>
+      <description>python网络编程 这也仅仅是python网络编程的入门，没有涉及到文件传输，也就是最基础的框架。UCP和TCP传输信息，并使用多线程进行双</description>
+    </item>
+    <item>
+      <title>网络编程基础入门</title>
+      <link>http://localhost:1313/2024/imgs/</link>
+      <pubDate>Tue, 23 Apr 2024 23:08:18 +0800</pubDate>
+      <guid>http://localhost:1313/2024/imgs/</guid>
+      <description>网络编程 看了狂神说Java的网络编程课程后进行总结。 但是关于 网络编程的知识不止这些，各种I/O的深入了解，不同需要的具体实现等等都需要后续的</description>
+    </item>
+    <item>
+      <title>【hugo&#43;stack】搭建过程</title>
+      <link>http://localhost:1313/2024/hugo-stack%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</link>
+      <pubDate>Tue, 09 Apr 2024 10:17:45 +0800</pubDate>
+      <guid>http://localhost:1313/2024/hugo-stack%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</guid>
+      <description>hugo+stack 本主题由 CaiJimmy 制作并发布，这个仓库是由 Mantyke 修改的魔改版本 Github 仓库地址：Mantyke/stack-theme-mod 参考文章：https://cu</description>
+    </item>
+    <item>
+      <title>Hello World！</title>
+      <link>http://localhost:1313/2024/hello-world/</link>
+      <pubDate>Tue, 09 Apr 2024 09:15:49 +0800</pubDate>
+      <guid>http://localhost:1313/2024/hello-world/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

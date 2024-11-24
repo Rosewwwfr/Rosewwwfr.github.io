@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GUI on rose</title>
+    <link>http://localhost:1313/tags/gui/</link>
+    <description>Recent content in GUI on rose</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 02 Sep 2024 08:59:25 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/gui/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GUI编程-画画坂</title>
+      <link>http://localhost:1313/2024/imgs/</link>
+      <pubDate>Mon, 02 Sep 2024 08:59:25 +0800</pubDate>
+      <guid>http://localhost:1313/2024/imgs/</guid>
+      <description>这两天学习了GUI编程后，实现的小项目，还有记事本，记事本难点较少，画图板自己解决不了，遂记录一下 画画板项目 要求： 开发一款简单的画图软件, 包</description>
+    </item>
+  </channel>
+</rss>

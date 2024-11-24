@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>博客搭建 on rose</title>
+    <link>http://localhost:1313/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+    <description>Recent content in 博客搭建 on rose</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 09 Apr 2024 10:17:45 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>【hugo&#43;stack】搭建过程</title>
+      <link>http://localhost:1313/2024/hugo-stack%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</link>
+      <pubDate>Tue, 09 Apr 2024 10:17:45 +0800</pubDate>
+      <guid>http://localhost:1313/2024/hugo-stack%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/</guid>
+      <description>hugo+stack 本主题由 CaiJimmy 制作并发布，这个仓库是由 Mantyke 修改的魔改版本 Github 仓库地址：Mantyke/stack-theme-mod 参考文章：https://cu</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on rose</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on rose</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 20 Nov 2024 21:09:40 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java</title>
+      <link>http://localhost:1313/categories/java/</link>
+      <pubDate>Wed, 20 Nov 2024 21:09:40 +0800</pubDate>
+      <guid>http://localhost:1313/categories/java/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SpringBoot</title>
+      <link>http://localhost:1313/categories/springboot/</link>
+      <pubDate>Wed, 20 Nov 2024 21:09:40 +0800</pubDate>
+      <guid>http://localhost:1313/categories/springboot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/categories/python/</link>
+      <pubDate>Mon, 02 Sep 2024 08:59:25 +0800</pubDate>
+      <guid>http://localhost:1313/categories/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>博客搭建</title>
+      <link>http://localhost:1313/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+      <pubDate>Tue, 09 Apr 2024 10:17:45 +0800</pubDate>
+      <guid>http://localhost:1313/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/categories/test/</link>
+      <pubDate>Tue, 09 Apr 2024 09:15:49 +0800</pubDate>
+      <guid>http://localhost:1313/categories/test/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

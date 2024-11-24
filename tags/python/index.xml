@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on rose</title>
+    <link>http://localhost:1313/tags/python/</link>
+    <description>Recent content in Python on rose</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 02 Sep 2024 08:59:25 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GUI编程-画画坂</title>
+      <link>http://localhost:1313/2024/imgs/</link>
+      <pubDate>Mon, 02 Sep 2024 08:59:25 +0800</pubDate>
+      <guid>http://localhost:1313/2024/imgs/</guid>
+      <description>这两天学习了GUI编程后，实现的小项目，还有记事本，记事本难点较少，画图板自己解决不了，遂记录一下 画画板项目 要求： 开发一款简单的画图软件, 包</description>
+    </item>
+    <item>
+      <title>python网络编程入门-1</title>
+      <link>http://localhost:1313/2024/python%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8-1/</link>
+      <pubDate>Mon, 29 Jul 2024 18:04:15 +0800</pubDate>
+      <guid>http://localhost:1313/2024/python%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8-1/</guid>
+      <description>python网络编程 这也仅仅是python网络编程的入门，没有涉及到文件传输，也就是最基础的框架。UCP和TCP传输信息，并使用多线程进行双</description>
+    </item>
+  </channel>
+</rss>
