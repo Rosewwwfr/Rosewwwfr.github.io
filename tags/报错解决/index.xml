@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>报错解决 on rose</title>
+    <link>http://localhost:1313/tags/%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/</link>
+    <description>Recent content in 报错解决 on rose</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 29 Nov 2024 19:31:08 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SpirngBoot3.4与MyBatisplus 3.5.5 不兼容问题</title>
+      <link>http://localhost:1313/2024/spirngboot3.4%E4%B8%8Emybatisplus-3.5.5-%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Fri, 29 Nov 2024 19:31:08 +0800</pubDate>
+      <guid>http://localhost:1313/2024/spirngboot3.4%E4%B8%8Emybatisplus-3.5.5-%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</guid>
+      <description>SpirngBoot3.4与MyBatisplus 3.5.5 不兼容问题 在学习使用mybatis-plus时，出现了 项目搭建不起来。 报错信息为： 1 Exception encountered</description>
+    </item>
+  </channel>
+</rss>

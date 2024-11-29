@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
     <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='简单的记录一下搭建该博客的过程。'><title>【hugo&#43;stack】搭建过程</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='在学习整合使用mybatis-plus时，出现了 项目搭建不起来。'><title>SpirngBoot3.4与MyBatisplus 3.5.5 不兼容问题</title>
 
-<link rel='canonical' href='http://localhost:1313/2024/hugo-stack%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/'>
+<link rel='canonical' href='http://localhost:1313/2024/spirngboot3.4%E4%B8%8Emybatisplus-3.5.5-%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/'>
 
-<link rel="stylesheet" href="/scss/style.min.508437f86ce3b9ffd02321d452240fc0466ca2e97601bb7d5e14314bc3ed418e.css"><meta property='og:title' content='【hugo&#43;stack】搭建过程'>
-<meta property='og:description' content='简单的记录一下搭建该博客的过程。'>
-<meta property='og:url' content='http://localhost:1313/2024/hugo-stack%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/'>
+<link rel="stylesheet" href="/scss/style.min.508437f86ce3b9ffd02321d452240fc0466ca2e97601bb7d5e14314bc3ed418e.css"><meta property='og:title' content='SpirngBoot3.4与MyBatisplus 3.5.5 不兼容问题'>
+<meta property='og:description' content='在学习整合使用mybatis-plus时，出现了 项目搭建不起来。'>
+<meta property='og:url' content='http://localhost:1313/2024/spirngboot3.4%E4%B8%8Emybatisplus-3.5.5-%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/'>
 <meta property='og:site_name' content='rose'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='stack' /><meta property='article:published_time' content='2024-04-09T10:17:45&#43;08:00'/><meta property='article:modified_time' content='2024-04-09T10:17:45&#43;08:00'/>
-<meta name="twitter:title" content="【hugo&#43;stack】搭建过程">
-<meta name="twitter:description" content="简单的记录一下搭建该博客的过程。">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='报错解决' /><meta property='article:published_time' content='2024-11-29T19:31:08&#43;08:00'/><meta property='article:modified_time' content='2024-11-29T19:31:08&#43;08:00'/>
+<meta name="twitter:title" content="SpirngBoot3.4与MyBatisplus 3.5.5 不兼容问题">
+<meta name="twitter:description" content="在学习整合使用mybatis-plus时，出现了 项目搭建不起来。">
   
 
 <style>
@@ -57,7 +57,7 @@
 </script>
 <div class="container main-container flex 
     <!-- 
-        extended
+        on-phone--column extended
      -->
     on-phone--column extended
 ">
@@ -265,20 +265,20 @@
     
     <header class="article-category">
         
-            <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" >
-                博客搭建
+            <a href="/categories/springboot/" >
+                SpringBoot
             </a>
         
     </header>
     
 
     <h2 class="article-title">
-        <a href="/2024/hugo-stack%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/">【hugo&#43;stack】搭建过程</a>
+        <a href="/2024/spirngboot3.4%E4%B8%8Emybatisplus-3.5.5-%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/">SpirngBoot3.4与MyBatisplus 3.5.5 不兼容问题</a>
     </h2>
 
     
     <h3 class="article-subtitle">
-        简单的记录一下搭建该博客的过程。
+        在学习整合使用mybatis-plus时，出现了 项目搭建不起来。
     </h3>
     
 
@@ -295,7 +295,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Apr 09, 2024</time>
+                <time class="article-time--published">Nov 29, 2024</time>
             </div>
         
 
@@ -310,7 +310,7 @@
 
 
                 <time class="article-words">
-                    970字
+                    239字
                 </time>
             </div>
         
@@ -322,128 +322,23 @@
     <section class="article-content">
     
     
-    <h2 id="hugostack">hugo+stack</h2>
-<p>本主题由 <a class="link" href="https://github.com/CaiJimmy"  target="_blank" rel="noopener"
-    >CaiJimmy</a> 制作并<a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack"  target="_blank" rel="noopener"
-    >发布</a>，这个仓库是由 <a class="link" href="https://mantyke.icu/"  target="_blank" rel="noopener"
-    >Mantyke</a> 修改的魔改版本</p>
-<p>Github 仓库地址：<a class="link" href="https://github.com/Mantyke"  target="_blank" rel="noopener"
-    >Mantyke</a>/<a class="link" href="https://github.com/Mantyke/Hugo-stack-theme-mod"  target="_blank" rel="noopener"
-    >stack-theme-mod</a></p>
-<hr>
-<p>参考文章：https://cuttontail.blog/blog/create-a-wesite-using-github-pages-and-hugo/（师傅写得很详细，我就不再赘述。）</p>
-<p>思路：GitHub pages + hugo  进行搭建博客。</p>
-<p>不过在途中遇到一些问题：hugo server 时总是报错，因此决定采取更加容易的搭建方式。</p>
-<p>可能原因是：</p>
-<ul>
-<li>主题模板与hugo 版本不适配。</li>
-<li>模板中post文章的语法出错。</li>
-</ul>
-<hr>
-<h3 id="hugo">hugo</h3>
-<p>根据<a class="link" href="https://gohugo.io/getting-started/installing/"  target="_blank" rel="noopener"
-    >Hugo 文档：Install Hugo</a>去安装hugo。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#检查是否安装成功（extend版）
-</span></span><span class="line"><span class="cl">hugo version  
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="stack">stack</h3>
-<p>在项目目录下:(把Mantyke师傅的版本直接git到本地)</p>
+    <h1 id="spirngboot34与mybatisplus-355-不兼容问题">SpirngBoot3.4与MyBatisplus 3.5.5 不兼容问题</h1>
+<blockquote>
+<p>在学习使用mybatis-plus时，出现了 项目搭建不起来。</p>
+</blockquote>
+<p>报错信息为：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git clone https://github.com/Mantyke/Hugo-stack-theme-mod.git
-</span></span></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-zed" data-lang="zed"><span class="line"><span class="cl"><span class="w"> </span><span class="n">Exception</span><span class="w"> </span><span class="n">encountered</span><span class="w"> </span><span class="n">during</span><span class="w"> </span><span class="n">context</span><span class="w"> </span><span class="n">initialization</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">cancelling</span><span class="w"> </span><span class="n">refresh</span><span class="w"> </span><span class="n">attempt</span><span class="o">:</span><span class="w"> </span><span class="n">org</span><span class="p">.</span><span class="n">springframework</span><span class="p">.</span><span class="n">beans</span><span class="p">.</span><span class="n">factory</span><span class="p">.</span><span class="n">BeanDefinitionStoreException</span><span class="o">:</span><span class="w"> </span><span class="n">Invalid</span><span class="w"> </span><span class="n">bean</span><span class="w"> </span><span class="kt">definition</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="err">&#39;</span><span class="n">userMapper</span><span class="err">&#39;</span><span class="w"> </span><span class="n">defined</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">file</span><span class="w"> </span><span class="p">[</span><span class="n">C</span><span class="o">:</span><span class="err">\</span><span class="n">javaweb</span><span class="err">\</span><span class="n">Template</span><span class="err">\</span><span class="n">target</span><span class="err">\</span><span class="n">classes</span><span class="err">\</span><span class="n">top</span><span class="err">\</span><span class="n">rose</span><span class="err">\</span><span class="n">template</span><span class="err">\</span><span class="n">mapper</span><span class="err">\</span><span class="n">UserMapper</span><span class="p">.</span><span class="n">class</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">Invalid</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="n">for</span><span class="w"> </span><span class="n">attribute</span><span class="w"> </span><span class="err">&#39;</span><span class="n">factoryBeanObjectType</span><span class="err">&#39;</span><span class="o">:</span><span class="w"> </span><span class="n">java</span><span class="p">.</span><span class="n">lang</span><span class="p">.</span><span class="n">String</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>不再使用 <code>hugo new site xxxx</code>创建网点的方式进行搭建。</p>
-<h3 id="github-pages">GitHub pages</h3>
-<p>这个仓库必须使用特殊的命名格式 <code>&lt;username.github.io&gt;</code>， <code>&lt;username&gt;</code> 是自己的 GitHub 的用户名。</p>
-<h3 id="发布">发布</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#生成静态网页到public
-</span></span><span class="line"><span class="cl">hugo 
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">#将  public  文件夹初始化为 Git 仓库，并设置默认主分支名为  main。
-</span></span><span class="line"><span class="cl">cd public
-</span></span><span class="line"><span class="cl">git init -b main
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">#需要设置 GitHub 的 ssh 链接
-</span></span><span class="line"><span class="cl">git remote add origin git@github.com:Rosewwwfr/Rosewwwfr.github.io.git
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">git pull --rebase origin main
-</span></span><span class="line"><span class="cl">git add .
-</span></span><span class="line"><span class="cl">git commit -m &#34;...(修改的信息)&#34;
-</span></span><span class="line"><span class="cl">git push origin main
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="后续管理">后续管理</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#创建文章
-</span></span><span class="line"><span class="cl">hugo new xxx.md
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">#本地调试
-</span></span><span class="line"><span class="cl">hugo server
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">#生成html
-</span></span><span class="line"><span class="cl">hugo 
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">#上传到GitHub pages 
-</span></span><span class="line"><span class="cl">git add .
-</span></span><span class="line"><span class="cl">git commit -m &#34;...(修改的信息)&#34;
-</span></span><span class="line"><span class="cl">git pull --rebase origin main #可选,如果远端仓库与本地一致，则不需要合并。
-</span></span><span class="line"><span class="cl">git push origin main
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>刚开始可以手动发布，后续学习 <a class="link" href="https://www.pseudoyu.com/en/2022/05/29/deploy_your_blog_using_hugo_and_github_action/"  target="_blank" rel="noopener"
-    >gitthub action</a> 自动发布。</p>
-<h3 id="相关配置">相关配置</h3>
-<p>可以参考：<a class="link" href="https://stack.jimmycai.com/config/"  target="_blank" rel="noopener"
-    >官网的配置</a>,写的十分清楚。</p>
-<p><a class="link" href="https://mantyke.icu/posts/2022/stack-theme-mod/"  target="_blank" rel="noopener"
-    >https://mantyke.icu/posts/2022/stack-theme-mod/</a></p>
-<p>修改了一个实现分类双栏的效果：</p>
+</div><p><code>Invalid bean definition with name 'userMapper' defined in file</code></p>
+<p>可以知道时bean管理出现问题了，但是我仅仅是最简单的 测试插入。 @Mapper @MapperScan 都尝试了，均没有用。</p>
+<p>后了解到：Springboot 的版本和 Mybatis plus 中自带 mybatis 版本不兼容。</p>
+<p>因此手动剔除自带版本，手动添加最新版本即可解决。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -463,95 +358,28 @@
 </span><span class="lnt">15
 </span><span class="lnt">16
 </span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="o">//</span><span class="nt">--------------------------------------------------</span>
-</span></span><span class="line"><span class="cl"><span class="o">//</span> <span class="nt">文件位置</span><span class="err">：</span><span class="o">~/</span><span class="nt">assets</span><span class="o">/</span><span class="nt">scss</span><span class="o">/</span><span class="nt">custom</span><span class="o">/</span><span class="nt">_custom</span><span class="p">.</span><span class="nc">scss</span>
-</span></span><span class="line"><span class="cl"><span class="c">/* 归档页面两栏 */</span>
-</span></span><span class="line"><span class="cl"><span class="p">@</span><span class="k">media</span> <span class="o">(</span><span class="nt">min-width</span><span class="o">:</span> <span class="nt">1024px</span><span class="o">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nc">article-list--compact</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">      <span class="k">display</span><span class="p">:</span> <span class="k">grid</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">      <span class="k">grid-template-columns</span><span class="p">:</span> <span class="mi">1</span><span class="n">fr</span> <span class="mi">1</span><span class="n">fr</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">      <span class="k">background</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">      <span class="k">box-shadow</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">      <span class="k">gap</span><span class="p">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">  
-</span></span><span class="line"><span class="cl">      <span class="err">article</span> <span class="err">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">background</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">card</span><span class="o">-</span><span class="n">background</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">border</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="k">box-shadow</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">shadow</span><span class="o">-</span><span class="n">l2</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="k">border-radius</span><span class="p">:</span> <span class="mi">16</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">      <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">  <span class="err">}</span>
-</span></span><span class="line"><span class="cl">  
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl">		<span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;groupId&gt;</span>com.baomidou<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;artifactId&gt;</span>mybatis-plus-boot-starter<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;version&gt;</span>3.5.5<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;exclusions&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&lt;exclusion&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&lt;groupId&gt;</span>org.mybatis<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">                    <span class="nt">&lt;artifactId&gt;</span>mybatis-spring<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&lt;/exclusion&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;/exclusions&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/dependency&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- https://mvnrepository.com/artifact/org.mybatis/mybatis --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;groupId&gt;</span>org.mybatis.spring.boot<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;artifactId&gt;</span>mybatis-spring-boot-starter<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;version&gt;</span>3.0.3<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/dependency&gt;</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="利用github搭建简易图床">利用GitHub搭建简易图床</h1>
-<p>博客肯定少不了图片，手动上传就麻烦了一点，于是学一下搭建免费简易图床。<a class="link" href="https://munlelee.github.io/post/%E5%88%A9%E7%94%A8github%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%AE%80%E6%98%93%E5%9B%BE%E5%BA%8A/"  target="_blank" rel="noopener"
-    >参考</a></p>
-<ol>
-<li>GitHub 创建仓库</li>
-<li>创建GitHub token</li>
-<li>在 picgo 上设置。</li>
-</ol>
-<p><figure 
-	>
-	<a href="https://raw.githubusercontent.com/Rosewwwfr/blog-imgs/main/blog/image-20240410143656485.png" >
-		<img src="https://raw.githubusercontent.com/Rosewwwfr/blog-imgs/main/blog/image-20240410143656485.png"
-			
-			
-			
-			loading="lazy"
-			alt="image-20240410143656485">
-	</a>
-	
-	<figcaption>image-20240410143656485</figcaption>
-	
-</figure></p>
-<p>在typroa 上设置 上传图片，方便写博客。</p>
-<p><figure 
-	>
-	<a href="https://raw.githubusercontent.com/Rosewwwfr/blog-imgs/main/blog/image-20240410143812940.png" >
-		<img src="https://raw.githubusercontent.com/Rosewwwfr/blog-imgs/main/blog/image-20240410143812940.png"
-			
-			
-			
-			loading="lazy"
-			alt="image-20240410143812940">
-	</a>
-	
-	<figcaption>image-20240410143812940</figcaption>
-	
-</figure></p>
-<p>（先试试效果怎么样，不行再换）</p>
-<hr>
-<p>到此，博客已经可以开始使用了，后续无聊在进行改动。</p>
-<h2 id="参考文章">参考文章：</h2>
-<ul>
-<li>
-<p><a class="link" href="https://www.pseudoyu.com/en/2022/05/29/deploy_your_blog_using_hugo_and_github_action/"  target="_blank" rel="noopener"
-    >pesudoyu师傅 </a></p>
-</li>
-<li>
-<p><a class="link" href="https://cuttontail.blog/blog/create-a-wesite-using-github-pages-and-hugo/"  target="_blank" rel="noopener"
-    >cuttontail师傅</a></p>
-</li>
-<li>
-<p><a class="link" href="https://stack.jimmycai.com/config/"  target="_blank" rel="noopener"
-    >https://stack.jimmycai.com/config/</a></p>
-</li>
-<li>
-<p><a class="link" href="https://munlelee.github.io/post/%E5%88%A9%E7%94%A8github%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E7%AE%80%E6%98%93%E5%9B%BE%E5%BA%8A/"  target="_blank" rel="noopener"
-    >利用GitHub搭建免费图床</a></p>
-</li>
-</ul>
-
+</div>
 </section>
 
 
@@ -559,7 +387,7 @@
     
     <section class="article-tags">
         
-            <a href="/tags/stack/">Stack</a>
+            <a href="/tags/%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3/">报错解决</a>
         
     </section>
 
@@ -748,43 +576,6 @@ document.getElementById('days').innerHTML = number_of_days;
     </form>
         
             
-    <section class="widget archives">
-        <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">Table of contents</h2>
-        
-        <div class="widget--toc">
-            <nav id="TableOfContents">
-  <ol>
-    <li><a href="#hugostack">hugo+stack</a>
-      <ol>
-        <li><a href="#hugo">hugo</a></li>
-        <li><a href="#stack">stack</a></li>
-        <li><a href="#github-pages">GitHub pages</a></li>
-        <li><a href="#发布">发布</a></li>
-        <li><a href="#后续管理">后续管理</a></li>
-        <li><a href="#相关配置">相关配置</a></li>
-      </ol>
-    </li>
-  </ol>
-
-  <ol>
-    <li><a href="#参考文章">参考文章：</a></li>
-  </ol>
-</nav>
-        </div>
-    </section>
-
         
             <section class="widget categories">
         <div class="widget-icon">
