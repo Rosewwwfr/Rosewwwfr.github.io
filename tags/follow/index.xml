@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Follow on rose</title>
+    <link>http://localhost:1313/tags/follow/</link>
+    <description>Recent content in Follow on rose</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 02 Dec 2024 00:06:06 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/follow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Follow-开源的RSS阅读器</title>
+      <link>http://localhost:1313/2024/follow-%E5%BC%80%E6%BA%90%E7%9A%84rss%E9%98%85%E8%AF%BB%E5%99%A8/</link>
+      <pubDate>Mon, 02 Dec 2024 00:06:06 +0800</pubDate>
+      <guid>http://localhost:1313/2024/follow-%E5%BC%80%E6%BA%90%E7%9A%84rss%E9%98%85%E8%AF%BB%E5%99%A8/</guid>
+      <description>follow 新一代信息浏览器 最近发现了一个超级神器，follow ！ 一款有过滤自己的输入，对自己的信息输入掌握主动权。 而我由于一直苦恼于想通过B站进行信</description>
+    </item>
+  </channel>
+</rss>

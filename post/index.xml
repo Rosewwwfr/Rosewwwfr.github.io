@@ -6,8 +6,15 @@
     <description>Recent content in Posts on rose</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 29 Nov 2024 19:31:08 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 02 Dec 2024 00:06:06 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Follow-开源的RSS阅读器</title>
+      <link>http://localhost:1313/2024/follow-%E5%BC%80%E6%BA%90%E7%9A%84rss%E9%98%85%E8%AF%BB%E5%99%A8/</link>
+      <pubDate>Mon, 02 Dec 2024 00:06:06 +0800</pubDate>
+      <guid>http://localhost:1313/2024/follow-%E5%BC%80%E6%BA%90%E7%9A%84rss%E9%98%85%E8%AF%BB%E5%99%A8/</guid>
+      <description>follow 新一代信息浏览器 最近发现了一个超级神器，follow ！ 一款有过滤自己的输入，对自己的信息输入掌握主动权。 而我由于一直苦恼于想通过B站进行信</description>
+    </item>
     <item>
       <title>SpirngBoot3.4与MyBatisplus 3.5.5 不兼容问题</title>
       <link>http://localhost:1313/2024/spirngboot3.4%E4%B8%8Emybatisplus-3.5.5-%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</link>

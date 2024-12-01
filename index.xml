@@ -6,7 +6,61 @@
         <description>Recent content on rose</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Fri, 29 Nov 2024 19:31:08 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 02 Dec 2024 00:06:06 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Follow-开源的RSS阅读器</title>
+        <link>http://localhost:1313/2024/follow-%E5%BC%80%E6%BA%90%E7%9A%84rss%E9%98%85%E8%AF%BB%E5%99%A8/</link>
+        <pubDate>Mon, 02 Dec 2024 00:06:06 +0800</pubDate>
+        
+        <guid>http://localhost:1313/2024/follow-%E5%BC%80%E6%BA%90%E7%9A%84rss%E9%98%85%E8%AF%BB%E5%99%A8/</guid>
+        <description>&lt;h3 id=&#34;follow--新一代信息浏览器&#34;&gt;follow  新一代信息浏览器&lt;/h3&gt;
+&lt;p&gt;最近发现了一个超级神器，follow ！ 一款有过滤自己的输入，对自己的信息输入掌握主动权。&lt;/p&gt;
+&lt;p&gt;而我由于一直苦恼于想通过B站进行信息摄入，但是又常常会被一些无关紧要的视频收割了注意力，尽管那些视频有些“低脂”，但凡问自己一句“你要看这个视频吗？” 答案都会是否。但是就是控制不住自己，也许是我意志力薄弱，但是follow 无疑是有利于改善这个问题的。&lt;/p&gt;
+&lt;p&gt;所以follow是什么？&lt;/p&gt;
+&lt;p&gt;简单的来说：就是一款基于rss的信息聚合阅读器。&lt;/p&gt;
+&lt;p&gt;rss:  聚合自己的信息源，可以更多的优质摄入。&lt;/p&gt;
+&lt;p&gt;但由于 rss 会减少网站的收益，因此网站不再主动提供 rss。而 rsshub 就很好的解决了这个问题，通过爬虫帮我们将站点转化为rss,以便我们进行信息的聚合。https://rsshub.netlify.app/zh/usage&lt;/p&gt;
+&lt;p&gt;而 follow 则是基于RSSHUB ，使用极其方便，只需要给链接 进行搜索即可。也可以上 rsshub 去查看rsshub 路由如何写，手动添加。&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://raw.githubusercontent.com/Rosewwwfr/blog-imgs/main/blog/image-20241201233906637.png&#34; &gt;
+		&lt;img src=&#34;https://raw.githubusercontent.com/Rosewwwfr/blog-imgs/main/blog/image-20241201233906637.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;image-20241201233906637&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;image-20241201233906637&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;由于 还在公测阶段，follow 对订阅数量有所限制，因此我在小黄鱼买了邀请码，开放了更多的订阅限制。&lt;/p&gt;
+&lt;p&gt;还获得了一些follow的使用教程、热门的订阅，一键导入。&lt;/p&gt;
+&lt;p&gt;至于如何使用我就不赘述了，给出文章进行参考。&lt;/p&gt;
+&lt;p&gt;资源分享：&lt;/p&gt;
+&lt;p&gt;我用夸克网盘分享了「【follow的详细使用教程和优质订阅源合集】」，点击链接即可保存。
+链接：https://pan.quark.cn/s/e6a2ad8e31ce&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://raw.githubusercontent.com/Rosewwwfr/blog-imgs/main/blog/image-20241201235726662.png&#34; &gt;
+		&lt;img src=&#34;https://raw.githubusercontent.com/Rosewwwfr/blog-imgs/main/blog/image-20241201235726662.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;image-20241201235726662&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;image-20241201235726662&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;top-rss-list  github地址: &lt;a class=&#34;link&#34; href=&#34;https://github.com/weekend-project-space/top-rss-list&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/weekend-project-space/top-rss-list&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;follow 基础使用教程： &lt;a class=&#34;link&#34; href=&#34;https://lillianwho.com/posts/follow%E6%94%BB%E7%95%A5/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://lillianwho.com/posts/follow%E6%94%BB%E7%95%A5/&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>SpirngBoot3.4与MyBatisplus 3.5.5 不兼容问题</title>
         <link>http://localhost:1313/2024/spirngboot3.4%E4%B8%8Emybatisplus-3.5.5-%E4%B8%8D%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</link>
         <pubDate>Fri, 29 Nov 2024 19:31:08 +0800</pubDate>
