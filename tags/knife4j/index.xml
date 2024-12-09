@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Knife4j on rose</title>
+    <link>http://localhost:1313/tags/knife4j/</link>
+    <description>Recent content in Knife4j on rose</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 02 Dec 2024 16:09:40 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/knife4j/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Knife4j与封装自定义统一结果的冲突</title>
+      <link>http://localhost:1313/2024/knife4j%E4%B8%8E%E5%B0%81%E8%A3%85%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%9F%E4%B8%80%E7%BB%93%E6%9E%9C%E7%9A%84%E5%86%B2%E7%AA%81/</link>
+      <pubDate>Mon, 02 Dec 2024 16:09:40 +0800</pubDate>
+      <guid>http://localhost:1313/2024/knife4j%E4%B8%8E%E5%B0%81%E8%A3%85%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%9F%E4%B8%80%E7%BB%93%E6%9E%9C%E7%9A%84%E5%86%B2%E7%AA%81/</guid>
+      <description>记录Knife4j与自定义统一结果的冲突 在使用 knife4j-openapi3-jakarta-spring-boot-starter的时候</description>
+    </item>
+  </channel>
+</rss>

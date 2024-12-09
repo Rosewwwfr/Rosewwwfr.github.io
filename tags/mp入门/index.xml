@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mp入门 on rose</title>
+    <link>http://localhost:1313/tags/mp%E5%85%A5%E9%97%A8/</link>
+    <description>Recent content in Mp入门 on rose</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 09 Dec 2024 19:24:30 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/mp%E5%85%A5%E9%97%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mybatis Plus入门学习-1</title>
+      <link>http://localhost:1313/2024/mybatis-plus%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0-1/</link>
+      <pubDate>Mon, 09 Dec 2024 19:24:30 +0800</pubDate>
+      <guid>http://localhost:1313/2024/mybatis-plus%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0-1/</guid>
+      <description>Mybatis Plus -1 写在前面： 介绍了mp的基础使用方法，看完即可简化mybatis的开发，实现一些初学阶段的curd 对于复杂情况的curd，可以对官网进行</description>
+    </item>
+  </channel>
+</rss>

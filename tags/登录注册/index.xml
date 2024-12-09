@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>登录注册 on rose</title>
+    <link>http://localhost:1313/tags/%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C/</link>
+    <description>Recent content in 登录注册 on rose</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 05 Dec 2024 17:30:29 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SpringBoot3 整合登录注册</title>
+      <link>http://localhost:1313/2024/springboot3-%E6%95%B4%E5%90%88%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C/</link>
+      <pubDate>Thu, 05 Dec 2024 17:30:29 +0800</pubDate>
+      <guid>http://localhost:1313/2024/springboot3-%E6%95%B4%E5%90%88%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C/</guid>
+      <description>Springboot3x 脚手架开发-整合登录注册 先理清要实现的功能 登录： 用户、密码、验证码 注册 用户、密码、邮箱、邮箱验证码 因此就需要知道 如何引入图形验证码、短信验</description>
+    </item>
+  </channel>
+</rss>

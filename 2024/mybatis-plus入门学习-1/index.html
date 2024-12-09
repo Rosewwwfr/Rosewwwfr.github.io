@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='mp的基础使用，curd、iservice 和条件构造器'><title>Mybatis Plus入门学习-1</title>
+
+<link rel='canonical' href='http://localhost:1313/2024/mybatis-plus%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0-1/'>
+
+<link rel="stylesheet" href="/scss/style.min.508437f86ce3b9ffd02321d452240fc0466ca2e97601bb7d5e14314bc3ed418e.css"><meta property='og:title' content='Mybatis Plus入门学习-1'>
+<meta property='og:description' content='mp的基础使用，curd、iservice 和条件构造器'>
+<meta property='og:url' content='http://localhost:1313/2024/mybatis-plus%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0-1/'>
+<meta property='og:site_name' content='rose'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='mp入门' /><meta property='article:published_time' content='2024-12-09T19:24:30&#43;08:00'/><meta property='article:modified_time' content='2024-12-09T19:24:30&#43;08:00'/>
+<meta name="twitter:title" content="Mybatis Plus入门学习-1">
+<meta name="twitter:description" content="mp的基础使用，curd、iservice 和条件构造器">
+  
+
+<style>
+    :root {
+        --article-font-family: "Noto Serif SC", var(--base-font-family);
+    }
+</style>
+
+<script> 
+		(function () {
+		    const customFont = document.createElement('link');
+		    customFont.href = "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;700&display=swap"; 
+		    customFont.type = "text/css";
+		    customFont.rel = "stylesheet";
+		
+		    document.head.appendChild(customFont);
+		}());
+</script>
+
+    </head>
+    <body class="
+    article-page
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            localStorage.setItem(colorSchemeKey, "auto");
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    <!-- 
+        extended
+     -->
+    on-phone--column extended
+">
+    
+<div id="article-toolbar">
+    <a href="http://localhost:1313/" class="back-home">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+        <span>Back</span>
+    </a>
+</div>
+    <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu5f7f3e361fb1d231903f76a1879f5076_201838_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <h1 class="site-name"><a href="/">rose</a></h1>
+        <h2 class="site-description">一步步走路，一点点变好</h2><ol class="social-menu">
+                
+                    <li>
+                        <a 
+                            href='https://github.com/rosewwwfr'
+                            target="_blank"
+                            title="GitHub"
+                        >
+                            
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a 
+                            href='https://twitter.com'
+                            target="_blank"
+                            title="Twitter"
+                        >
+                            
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                            
+                        </a>
+                    </li>
+                
+            </ol></header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>friends</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+    </ol>
+</aside>
+
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/springboot/" >
+                SpringBoot
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/2024/mybatis-plus%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0-1/">Mybatis Plus入门学习-1</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        mp的基础使用，curd、iservice 和条件构造器
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Dec 09, 2024</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-words">
+                    1883字
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="mybatis-plus--1">Mybatis Plus -1</h1>
+<p>写在前面：</p>
+<blockquote>
+<p>介绍了mp的基础使用方法，看完即可简化mybatis的开发，实现一些初学阶段的curd</p>
+<p>对于复杂情况的curd，可以对官网进行查阅，不断进行积累经验。</p>
+<p><a class="link" href="https://baomidou.com/getting-started/"  target="_blank" rel="noopener"
+    >https://baomidou.com/getting-started/</a></p>
+</blockquote>
+<p>一个 MyBatis的增强工具，在 MyBatis 的基础上只做增强不做改变，为简化开发、提高效率而生</p>
+<p>支持任何能使用 <code>Mybatis</code> 进行 CRUD, 并且支持标准 SQL 的数据库。</p>
+<p>官网：https://baomidou.com/</p>
+<p>简单来说：就是简化mybatis的开发，内置了一些sql，不用每个CURD都手写。</p>
+<h2 id="入门案例">入门案例</h2>
+<p>BaseMapper是MyBatis-Plus提供的模板mapper。</p>
+<p>我们创建操作对应数据库的mapper 后，继承BaseMapper 即可。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@Mapper</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">public</span><span class="w"> </span><span class="kd">interface</span> <span class="nc">UserMapper</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">BaseMapper</span><span class="o">&lt;</span><span class="n">User</span><span class="o">&gt;</span><span class="p">{}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>记得添加 <code>@Mapper</code> 或在启动类添加 <code>@MapperScan</code> 指定对应的mapper，使其交给IOC容器管理。</p>
+<p>测试：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@SpringBootTest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kd">class</span> <span class="nc">MybatisPlusDemoApplicationTests</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> 	
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="c1">// 自动从IOC容器中装载对应的对象</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Autowired</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">private</span><span class="w"> </span><span class="n">UserMapper</span><span class="w"> </span><span class="n">userMapper</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nd">@Test</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">testSelectList</span><span class="p">(){</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//UserMapper 中的 selectList() 方法的参数为 MP 内置的条件封装器 Wrapper</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//所以不填写就是无任何条件</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">List</span><span class="o">&lt;</span><span class="n">User</span><span class="o">&gt;</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">userMapper</span><span class="p">.</span><span class="na">selectList</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="n">users</span><span class="p">.</span><span class="na">forEach</span><span class="p">(</span><span class="n">user</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">user</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>tips: 开启日志输出,输出在控制台。 方便检查sql 的执行情况以及找出错误。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-properties" data-lang="properties"><span class="line"><span class="cl"><span class="c1">#mybatis日志</span>
+</span></span><span class="line"><span class="cl"><span class="na">mybatis-plus.configuration.log-impl</span><span class="o">=</span><span class="s">org.apache.ibatis.logging.stdout.StdOutImpl</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="基本的curd">基本的CURD</h2>
+<p>最基础的增删改查，在baseMapper中均已定义，可以直接使用。</p>
+<h3 id="insert">insert</h3>
+<p>没什么好说的，传入一个实体类就会插入。返回受影响的行数。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span><span class="w"> </span><span class="n">rangs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">userMapper</span><span class="p">.</span><span class="na">insert</span><span class="p">(</span><span class="n">user</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>值得一说的是：其id 策略默认是 基于雪花算法生成的。（可以在实体类中通过注解修改，或进行配置）</p>
+<h2 id="delete">delete</h2>
+<ul>
+<li>deleteById</li>
+<li>deleteBatchIds</li>
+<li>deleteByMap  可以为删除设置条件。</li>
+</ul>
+<h3 id="update">Update</h3>
+<p>updateById   需要传入一个有id值的实体类对象。</p>
+<h3 id="select">Select</h3>
+<ul>
+<li>selectById</li>
+<li>selectBatchIds</li>
+<li>selectByMap</li>
+<li>selectList  查询所有信息</li>
+</ul>
+<blockquote>
+<p><strong>BaseMapper中大多方法中都有Wrapper类型的形参，此为条件构造器</strong></p>
+<p><strong>可针对于SQL语句设置不同的条件，若没有条件赋值null，即查询（删除/修改）所有数据</strong></p>
+</blockquote>
+<h3 id="自定义功能">自定义功能</h3>
+<p>是对mybatis的增强，因此也可以自定义sql语句，创建对应的映射文件。</p>
+<ol>
+<li>同包同名  resource下</li>
+<li>namspace属性 &mdash; mapper的全类名</li>
+<li>id属性  &mdash; 方法名</li>
+</ol>
+<h3 id="通用service----iservice">通用service  - iservice</h3>
+<p><figure 
+	>
+	<a href="https://rose-1317018836.cos.ap-guangzhou.myqcloud.com/image-20241209185610595.png" >
+		<img src="https://rose-1317018836.cos.ap-guangzhou.myqcloud.com/image-20241209185610595.png"
+			
+			
+			
+			loading="lazy"
+			alt="image-20241209185610595">
+	</a>
+	
+	<figcaption>image-20241209185610595</figcaption>
+	
+</figure></p>
+<p>service 接口继承 iservice</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">interface</span> <span class="nc">UserService</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">iservice</span><span class="o">&lt;</span><span class="n">User</span><span class="o">&gt;</span><span class="p">{}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>service接口</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">UserServiceImpl</span><span class="w"> </span><span class="kd">extends</span><span class="w"> </span><span class="n">ServiceImpl</span><span class="o">&lt;</span><span class="n">UserMapper</span><span class="p">,</span><span class="w"> </span><span class="n">User</span><span class="o">&gt;</span><span class="w"> </span><span class="kd">implements</span><span class="w"> </span><span class="n">UserService</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">}</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>就可以使用内置的方法了。<a class="link" href="https://baomidou.com/guides/data-interface/#mapper-interface"  target="_blank" rel="noopener"
+    >见官网</a>。</p>
+<h2 id="常用注解">常用注解：</h2>
+<p><code>@tableName</code>  解决实体类名和数据库表名不同。 也可以通过全局配置解决</p>
+<p><code>@tableId</code>:  解决属性名和数据库表id名不同。</p>
+<p>如果表中的id名不为id 需用 value属性进行指定。type属性，指定主键策略。</p>
+<ul>
+<li>dType.ASSIGN_ID(默认)：基于雪花算法的策略生成数据id，与数据库id是否设置自增无关</li>
+<li>IdType.AUTO：使用数据库的自增策略，要确保数据库设置了id自增， 否则无效</li>
+</ul>
+<p>也可以全局配置：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-properties" data-lang="properties"><span class="line"><span class="cl"><span class="c1"># 配置MyBatis-Plus的主键策略</span>
+</span></span><span class="line"><span class="cl"><span class="na">mybatis-plus.global-config.db-config.id-type</span><span class="o">=</span><span class="s">auto</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>@tableField</code>: 解决属性名和列名不同。</p>
+<blockquote>
+<p>实体类中的属性使用的是驼峰命名风格，而表中的字段使用的是下划线命名风格</p>
+<p>如实体类属性userName，表中字段user_name</p>
+<p>此时MyBatis-Plus会自动将下划线命名风格转化为驼峰命名风格，相当于在MyBatis中配置</p>
+</blockquote>
+<p>如果是单纯的不一样，则需要通过该注解指定。</p>
+<p><code>@TableLogic</code> : 逻辑删除</p>
+<p>表中有字段   is_delete, 如果执行了 delete 操作，就会将字段转化为0，而不是真的删除。</p>
+<p>（例如回收站，可以恢复数据）</p>
+<h2 id="条件构造器和通用接口">条件构造器和通用接口</h2>
+<p>字面意思：构造CURD的条件，搭配baseMapper 中的方法进行使用。</p>
+<h3 id="wrapper">wrapper</h3>
+<p>Wrapper ： 条件构造抽象类，最顶端父类
+AbstractWrapper ： 用于查询条件封装，生成 sql 的 where 条件
+<strong>QueryWrapper ： 查询条件封装</strong>
+<strong>UpdateWrapper ： Update 条件封装</strong>
+AbstractLambdaWrapper ： 使用Lambda 语法
+LambdaQueryWrapper ：用于Lambda语法使用的查询Wrapper
+LambdaUpdateWrapper ： Lambda 更新封装Wrapper</p>
+<h3 id="使用">使用</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 1 创建一个 wrapper 对象</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">QueryWrapper</span><span class="o">&lt;</span><span class="n">User</span><span class="o">&gt;</span><span class="w"> </span><span class="n">queryWrapper</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">QueryWrapper</span><span class="o">&lt;&gt;</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// 2 条件构造</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">queryWrapper</span><span class="p">.</span><span class="na">like</span><span class="p">(</span><span class="s">&#34;name&#34;</span><span class="p">,</span><span class="s">&#34;a&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="p">.</span><span class="na">gt</span><span class="p">(</span><span class="s">&#34;age&#34;</span><span class="p">,</span><span class="n">20</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">// 3 作为参数传递</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">userMapper</span><span class="p">.</span><span class="na">update</span><span class="p">(</span><span class="n">user</span><span class="p">,</span><span class="n">queryWrapper</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>具体的可以参考官网： <a class="link" href="https://baomidou.com/guides/wrapper/"  target="_blank" rel="noopener"
+    >https://baomidou.com/guides/wrapper/</a></p>
+<p>也就是构造自己想要的条件，需要什么去官网找（或者在idea中看源码）。用多了自然就会了。</p>
+<hr>
+<h4 id="condition">Condition:</h4>
+<p>在开发过程中，组装条件是常见的功能，而这些条件数据来源于用户输入，是可选的，因此我们在组装这些条件时，必须先判断用户是否选择了这些条件，若选择则需要组装该条件，若没有选择则一定不能组装，以免影响SQL执行的结果。</p>
+<p>思路1:  可以用 if 语句进行判断。但是太冗余了。</p>
+<p>思路2：使用带condition参数的重载方法构建查 询条件，简化代码的编写。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">queryWrapper</span><span class="p">.</span><span class="na">like</span><span class="p">(</span><span class="n">StringUtils</span><span class="p">.</span><span class="na">isBlank</span><span class="p">(</span><span class="n">username</span><span class="p">),</span><span class="s">&#34;name&#34;</span><span class="p">,</span><span class="s">&#34;a&#34;</span><span class="p">);</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<p><strong>通过Lambda访问实体类属性对应的字段，避免使用字符串表示字段，防止运行时错误</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">//组装set子句</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c1">//将用户名中包含有a并且（年龄小于24或邮箱为null）的用户信息修改</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">LambdaUpdateWrapper</span><span class="o">&lt;</span><span class="n">User</span><span class="o">&gt;</span><span class="w"> </span><span class="n">updateWrapper</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">LambdaUpdateWrapper</span><span class="o">&lt;&gt;</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">updateWrapper</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//Lambda表达式设置操作字段</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">.</span><span class="na">set</span><span class="p">(</span><span class="n">User</span><span class="p">::</span><span class="n">getAge</span><span class="p">,</span><span class="w"> </span><span class="n">18</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">.</span><span class="na">set</span><span class="p">(</span><span class="n">User</span><span class="p">::</span><span class="n">getEmail</span><span class="p">,</span><span class="w"> </span><span class="s">&#34;user@test11.com&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">.</span><span class="na">like</span><span class="p">(</span><span class="n">User</span><span class="p">::</span><span class="n">getName</span><span class="p">,</span><span class="w"> </span><span class="s">&#34;a&#34;</span><span class="p">)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="c1">//lambda表达式内的逻辑优先运算</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="p">.</span><span class="na">and</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">i</span><span class="p">.</span><span class="na">lt</span><span class="p">(</span><span class="n">User</span><span class="p">::</span><span class="n">getAge</span><span class="p">,</span><span class="w"> </span><span class="n">24</span><span class="p">).</span><span class="na">or</span><span class="p">().</span><span class="na">isNull</span><span class="p">(</span><span class="n">User</span><span class="p">::</span><span class="n">getEmail</span><span class="p">));</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">User</span><span class="w"> </span><span class="n">user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">User</span><span class="p">();</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="kt">int</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">userMapper</span><span class="p">.</span><span class="na">update</span><span class="p">(</span><span class="n">user</span><span class="p">,</span><span class="w"> </span><span class="n">updateWrapper</span><span class="p">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        
+</span></span></span><span class="line"><span class="cl"><span class="w">   
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>还可以对分页插件、乐观锁等插件、通用枚举、代码生成器、多数据源和MybatisX 进行学习.</p>
+</blockquote>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/mp%E5%85%A5%E9%97%A8/">Mp入门</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/2024/springboot3-%E6%95%B4%E5%90%88%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">SpringBoot3 整合登录注册</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2024/springboot%E8%84%9A%E6%89%8B%E6%9E%B6%E5%BC%80%E5%8F%91/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Springboot脚手架开发</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/2024/knife4j%E4%B8%8E%E5%B0%81%E8%A3%85%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%9F%E4%B8%80%E7%BB%93%E6%9E%9C%E7%9A%84%E5%86%B2%E7%AA%81/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Knife4j与封装自定义统一结果的冲突</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+
+    <footer class="site-footer">
+  
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<script>
+(function(u, c) {
+  var d = document, t = 'script', o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+  o.src = u;
+  if (c) { o.addEventListener('load', function(e) { c(e); }); }
+  s.parentNode.insertBefore(o, s);
+})('//cdn.bootcss.com/pangu/3.3.0/pangu.min.js', function() {
+  pangu.spacingPage();
+});
+</script>
+
+    <section class="copyright">
+        &copy; 
+        
+        2024  <a id="days">0</a>Days<br>
+      共书写了27k字·共 12篇文章</br><span><p>
+    </section>
+    
+    <section class="powerby">
+        
+            author: rose <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.2.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a><br />
+         <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">© Licensed Under CC BY-NC-SA 4.0</a>
+    </section>
+
+<script>
+var s1 = '2024-04-09';
+s1 = new Date(s1.replace(/-/g, "/"));
+s2 = new Date();
+var days = s2.getTime() - s1.getTime();
+var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+document.getElementById('days').innerHTML = number_of_days;
+</script>
+    
+</footer>
+
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+    
+    
+    <aside class="sidebar right-sidebar sticky">
+        
+            <form action="/search/" class="search-form widget" >
+        <p>
+            <label>Search</label>
+            <input name="keyword" required placeholder="Type something..." />
+        
+            <button title="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+            </button>
+        </p>
+    </form>
+        
+            
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Table of contents</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#入门案例">入门案例</a></li>
+    <li><a href="#基本的curd">基本的CURD</a>
+      <ol>
+        <li><a href="#insert">insert</a></li>
+      </ol>
+    </li>
+    <li><a href="#delete">delete</a>
+      <ol>
+        <li><a href="#update">Update</a></li>
+        <li><a href="#select">Select</a></li>
+        <li><a href="#自定义功能">自定义功能</a></li>
+        <li><a href="#通用service----iservice">通用service  - iservice</a></li>
+      </ol>
+    </li>
+    <li><a href="#常用注解">常用注解：</a></li>
+    <li><a href="#条件构造器和通用接口">条件构造器和通用接口</a>
+      <ol>
+        <li><a href="#wrapper">wrapper</a></li>
+        <li><a href="#使用">使用</a>
+          <ol>
+            <li><a href="#condition">Condition:</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+        
+            <section class="widget categories">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
+</svg>
+
+
+  
+        </div> 
+        <h2 class="widget-title section-title">Categories</h2>
+    <div class="widget-categories--list">
+<div class="widget">
+    <h3 class="widget-title"> </h3>
+    <div class="widget-body">
+        <div class="category-list">
+            <div class="category-list-item"><a href="http://localhost:1313/categories/java/" class="category-list-link">java<span class="category-list-count">2</a>
+            </span></div>
+            <div class="category-list-item"><a href="http://localhost:1313/categories/python/" class="category-list-link">python<span class="category-list-count">2</a>
+            </span></div>
+            <div class="category-list-item"><a href="http://localhost:1313/categories/springboot/" class="category-list-link">springboot<span class="category-list-count">6</a>
+            </span></div>
+            <div class="category-list-item"><a href="http://localhost:1313/categories/test/" class="category-list-link">test<span class="category-list-count">1</a>
+            </span></div>
+            <div class="category-list-item"><a href="http://localhost:1313/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="category-list-link">博客搭建<span class="category-list-count">1</a>
+            </span></div>
+            <div class="category-list-item"><a href="http://localhost:1313/categories/%E5%BC%80%E6%BA%90%E7%A5%9E%E5%99%A8%E5%88%86%E4%BA%AB/" class="category-list-link">开源神器分享<span class="category-list-count">1</a>
+            </span></div>
+        </div>
+    </div>
+</div>
+    </div>
+    </section>
+        
+            <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">Archives</h2>
+
+        
+        
+        
+        
+        
+        <div class="widget-archive--list">
+            <div class="archives-year">
+                    <a href="/archives/#2024">
+                        
+                            <span class="year">2024</span>
+                            <span class="count">12</span>
+                        
+                    </a> 
+                </div>
+            
+        </div>
+    </section>
+        
+            <section class="widget tagCloud">
+    <div class="widget-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+    </div>
+    <h2 class="widget-title section-title">Tags</h2>
+
+    <div class="tagCloud-tags">
+        
+            <a href="/tags/python/" class="font_size_2">
+                Python
+            </a>
+        
+            <a href="/tags/%E5%AE%9E%E6%88%98/" class="font_size_2">
+                实战
+            </a>
+        
+            <a href="/tags/%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/" class="font_size_2">
+                网络编程
+            </a>
+        
+            <a href="/tags/error/" class="font_size_1">
+                Error
+            </a>
+        
+            <a href="/tags/follow/" class="font_size_1">
+                Follow
+            </a>
+        
+            <a href="/tags/gui/" class="font_size_1">
+                GUI
+            </a>
+        
+            <a href="/tags/java/" class="font_size_1">
+                Java
+            </a>
+        
+            <a href="/tags/knife4j/" class="font_size_1">
+                Knife4j
+            </a>
+        
+            <a href="/tags/mp%E5%85%A5%E9%97%A8/" class="font_size_1">
+                Mp入门
+            </a>
+        
+            <a href="/tags/springboot3%E5%AE%9E%E6%88%98-1/" class="font_size_1">
+                Springboot3实战-1
+            </a>
+        
+    </div>
+</section>
+        
+    </aside>
+
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<script
+    src="https://cdn.jsdelivr.net/gh/zhixuan2333/gh-blog@v0.1.0/js/nprogress.min.js"
+    integrity="sha384-bHDlAEUFxsRI7JfULv3DTpL2IXbbgn4JHQJibgo5iiXSK6Iu8muwqHANhun74Cqg"
+    crossorigin="anonymous"
+></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/zhixuan2333/gh-blog@v0.1.0/css/nprogress.css"
+    integrity="sha384-KJyhr2syt5+4M9Pz5dipCvTrtvOmLk/olWVdfhAp858UCa64Ia5GFpTN7+G4BWpE"
+    crossorigin="anonymous"
+/>
+<script>
+    NProgress.start();
+    document.addEventListener("readystatechange", () => {
+        if (document.readyState === "interactive") NProgress.inc(0.8);
+        if (document.readyState === "complete") NProgress.done();
+    });
+</script>
+
+    </body>
+</html>
